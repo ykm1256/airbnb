@@ -65,6 +65,17 @@ section#search{
     flex-direction: column;
     padding: 0 80px;
 }
+#search button {
+    background-color: rgb(224, 52, 95);
+    color: white;
+    width: 90px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+#search button:hover{
+    cursor: pointer;
+}
 #search ul {
     display: flex;
     list-style: none;
@@ -89,18 +100,15 @@ section#search{
     border-radius: 5px;
     font-weight: 700;
 }
-#search ul button:hover {
-    opacity: 1;
-}
-
 #search .container {
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr 1.6fr;
+    grid-template-columns: 4fr 4fr 4fr 1.3fr;
     gap: 0px;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0px 1px 5px rgba(0,0,0,0.18) ;
     margin-top: 10px;
+    justify-content: space-between;
 }
 #search .item div {
     display: flex;
@@ -120,21 +128,16 @@ section#search{
     cursor: pointer;
     border-radius: 10px;
     border: 2px solid rgba(0,0,0,0.18);
-
 }
-#search button {
-    background-color: rgb(224, 52, 95);
-    color: white;
-    width: 90px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
+#search .itembutton {
+    position: relative;     
 }
-#search button:hover{
-    cursor: pointer;
+#search .itembutton button {
+    position: absolute;
+    font-weight: 700; 
+    top: -25px;
+    right: 15%;
 }
-
-
 /* 서치 */
 
 /* 투게더 */
@@ -271,10 +274,14 @@ section#donate{
     margin-top: 20px;
     background-color: white;
     border-radius: 9px;
-    padding: 5px 12px;
+    padding: 7px 14px;
     border: 1px solid black;
     font-weight: 900;
     font-size: 14px;
+}
+#donate .left button:hover {
+    background-color: #e4e4e4;
+    cursor: pointer;
 }
 #donate .right {
     width: 85%;
