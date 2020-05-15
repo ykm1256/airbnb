@@ -285,7 +285,10 @@ section#donate{
 }
 #donate .right {
     width: 85%;
-    font-size: 18px;
+    font-size: 18px;    
+}
+#donate .right text{
+    line-height: 1;
 }
 /* 동참 */
 
