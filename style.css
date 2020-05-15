@@ -29,6 +29,9 @@ a {
     z-index: 1;
     padding: 2rem;
 }
+#navbar .logo:hover{
+    cursor: pointer;
+}
 #navbar ul {
     display: flex;
     align-items: center;
